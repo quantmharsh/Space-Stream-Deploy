@@ -9,8 +9,11 @@ import {v2 as cloudinary} from "cloudinary"
 import {server , app } from "./socket/socket.js"
 import  path from "path"
 import exp from "constants";
+import job from "./cron/cron.js";
 dotenv.config();
 connectDB();
+// cron job for pinging web every 14 minute
+job.start();
 // const app=express();
 
 const PORT=process.env.PORT ||5000

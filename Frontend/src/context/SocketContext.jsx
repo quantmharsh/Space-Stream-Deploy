@@ -23,7 +23,7 @@ export const SocketContextProvider=({children})=>{
         socket.on("getOnlineUsers" ,(users)=>{
             setOnlineUsers(users);
 
-        } )
+        } )    
 
         //handling disconnection
 
