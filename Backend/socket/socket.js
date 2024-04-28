@@ -9,7 +9,7 @@ const server= http.createServer(app);
 // create socket server and binding it with http server
 const io= new Server(server ,{
     cors:{
-        origin:["https://space-stream.onrender.com", "http://localhost:3000"],
+        origin:"https://space-stream.onrender.com",
         methods:["POST" , "GET"]
     }
 })

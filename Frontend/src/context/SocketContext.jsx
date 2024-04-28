@@ -11,7 +11,7 @@ export const SocketContextProvider=({children})=>{
     const[socket ,setSocket]=useState(null)
     const[onlineUsers , setOnlineUsers]=useState([])
     useEffect(() => {
-        const socket= io("http://localhost:5000" , {
+        const socket= io("https://space-stream.onrender.com" , {
             query:{
                 userId: user?._id
             }
